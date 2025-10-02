@@ -1,5 +1,8 @@
-class BurgerRecipe:
+from app.burger.validators.validator import Validator
 
+
+class BurgerRecipe:
+    burger = Validator()
 
     def __init__(self, buns: int, cheese: int, tomatoes: int, cutlets: int, eggs: int, sauce: str) -> None:
         self.buns = buns
